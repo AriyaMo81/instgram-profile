@@ -1,0 +1,139 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main {
+  width: 600px;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.05);
+  margin: 0 auto;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px;
+  position: relative;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.profile .photosection .photospacer {
+  width: 150px;
+  height: 150px;
+  border: #aaa solid;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.profile .photosection img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  transition-duration: 0.5s;
+}
+
+.profile .photosection img:hover {
+  scale: 1.2;
+}
+
+.profile .photosection #addIcon {
+  font-size: 2.5rem;
+  color: #3498bd;
+  translate: 110px -50px;
+}
+
+.profile .info {
+  display: flex;
+}
+
+.profile .info div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 25px;
+  font-size: 1.4rem;
+}
+
+.profile .info div h3 {
+  font-weight: normal;
+  margin-top: 5px;
+}
+
+.bio {
+  font-size: 1.2rem;
+}
+
+.bio a {
+  text-decoration: none;
+  color: #3498bd;
+  margin-top: 5px;
+  display: inline-block;
+  font-weight: bold;
+}
+
+button {
+  width: 85%;
+  border: 1px solid #aaa;
+  padding: 10px;
+  display: block;
+  margin: 10px auto;
+  font-size: 1.5rem;
+  background-color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.8);
+  transition: 0.5s;
+  font-weight: bold;
+}
+
+button:hover {
+  opacity: 0.5;
+  box-shadow: none;
+  color: #3498bd;
+}
+
+.posts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border-top: 1px solid #aaa;
+  margin-top: 20px;
+}
+
+.posts img {
+  width: 32%;
+  margin-top: 7px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.posts img:hover {
+  box-shadow: 0px 0px 5px 2px #3498bd;
+  scale: 1.01;
+}
+
+nav {
+  width: 580px;
+  background-color: white;
+  padding: 10px;
+  display: flex;
+  position: fixed;
+  justify-content: space-around;
+  align-items: center;
+  bottom: 0px;
+}
